@@ -1,3 +1,4 @@
+clear
 echo "Property of Moonshot Studios"
 echo "Would you like to install NetCatMenuMac? [y][n]"
 read -e download
