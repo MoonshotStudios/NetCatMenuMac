@@ -14,8 +14,8 @@ if [ "$download" == "y" ] ; then
 	echo "Installing uninstaller..."
 	mv NetCatMenuMacUninstaller.sh ~/Applications/NetCatMenuMac
 	echo "Removing installer files..."
-	rm ~/Downloads/NetCatMenuMac/*
-	rmdir ~/Downloads/NetCatMenuMac
+	rm ~/Downloads/NetCatMenuMac-master/*
+	rmdir ~/Downloads/NetCatMenuMac-master
 	echo "Would you like to add a desktop icon? [y][n]"
 	read -e desktopIcon
 	if [ "$desktopIcon" == "y" ] ; then
