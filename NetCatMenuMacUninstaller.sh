@@ -10,10 +10,16 @@ if [ "$uninstall" == "y" ] ; then
 	rm NetCatMenuMacLauncher.sh
 	echo "Deleting program file..."
 	rm NetCatMenuMacMain.sh
-	mv NetCatMenuMacUninstaller.sh ~
-	cd ~/Applications
-	echo "Deleting file folder..."
-	rmdir NetCatMenuMac
+	echo "Deleting installer..."
+	cd ~/Downloads/NetCatMenuMac-master
+	rm NetCatMenuMacWizard.sh
+	echo "Deleting README..."
+	rm README.md
+	cd ~
 	echo "Deleting uninstaller..."
-	rm NetCatMenuMacUninstaller.sh
+	rm ~/Applications/NetCatMenuMac/NetCatMenuMacUninstaller.sh
+	echo "Deleting download folder..."
+	rmdir ~/Downloads/NetCatMenuMac-master
+	echo "Deleting file folder..."
+	rmdir ~/Applications/NetCatMenuMac
 fi
