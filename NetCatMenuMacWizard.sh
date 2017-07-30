@@ -4,7 +4,7 @@ if [ "$download" == "y" ] ; then
 	cd ~
 	echo "Making file folder..."
 	mkdir NetCatMenuMac
-	cd ~/Downloads/NetCatMenuMac
+	cd ~/Downloads/NetCatMenuMac-master
 	echo "Installing program file..."
 	mv NetCatMenuMacMain.sh ~/NetCatMenuMac
 	echo "Installing launcher file..."
@@ -12,7 +12,7 @@ if [ "$download" == "y" ] ; then
 	echo "Would you like to add a desktop icon? [y][n]"
 	read -e desktopIcon
 	if [ "$desktopIcon" == "y" ] ; then
-		cd ~/Downloads/NetCatMenuMac
+		cd ~/Downloads/NetCatMenuMac-master
 		mv NetCatMenuMacDesktop.sh ~/Desktop
 	fi
 	echo ""
