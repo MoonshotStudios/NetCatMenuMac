@@ -1,2 +1,2 @@
-cd ~/NetCatMenuMain
+cd ~/Applications/NetCatMenuMac
 ./NetCatMenuMacLauncher.sh

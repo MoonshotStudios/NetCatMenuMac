@@ -1,14 +1,14 @@
 echo "Would you like to install NetCatMenuMac? [y][n]"
 read -e download
 if [ "$download" == "y" ] ; then
-	cd ~
+	cd ~/Applications
 	echo "Making file folder..."
 	mkdir NetCatMenuMac
 	cd ~/Downloads/NetCatMenuMac-master
 	echo "Installing program file..."
-	mv NetCatMenuMacMain.sh ~/NetCatMenuMac
+	mv NetCatMenuMacMain.sh ~/Applications/NetCatMenuMac
 	echo "Installing launcher file..."
-	mv NetCatMenuMacLauncher.sh ~/NetCatMenuMac
+	mv NetCatMenuMacLauncher.sh ~/Applications/NetCatMenuMac
 	echo "Would you like to add a desktop icon? [y][n]"
 	read -e desktopIcon
 	if [ "$desktopIcon" == "y" ] ; then
@@ -19,7 +19,7 @@ if [ "$download" == "y" ] ; then
 	echo "All files are installed. Would you like to run the program? [y][n]"
 	read -e run
 	if [ "$run" == "y" ] ; then
-		cd ~/NetCatMenuMac
+		cd ~/Applications/NetCatMenuMac
 		./NetCatMenuMacLauncher.sh
 	fi
 fi
