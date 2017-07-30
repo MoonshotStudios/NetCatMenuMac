@@ -1,0 +1,2 @@
+cd ~/NetCatMenuMain
+./NetCatMenuMacLauncher.sh
