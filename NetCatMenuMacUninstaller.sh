@@ -1,3 +1,4 @@
+clear
 echo "Would you like to uninstall NetCatMenuMac? [y][n]"
 read -e uninstall
 if [ "$uninstall" == "y" ] ; then
@@ -9,7 +10,10 @@ if [ "$uninstall" == "y" ] ; then
 	rm NetCatMenuMacLauncher.sh
 	echo "Deleting program file..."
 	rm NetCatMenuMacMain.sh
-	cd ..
+	mv NetCatMenuMacUninstaller.sh ~
+	cd ~/Applications
 	echo "Deleting file folder..."
 	rmdir NetCatMenuMac
+	echo "Deleting uninstaller..."
+	rm NetCatMenuMacUninstaller.sh
 fi
